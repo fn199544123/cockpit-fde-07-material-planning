@@ -1,0 +1,78 @@
+{
+  "version": 1,
+  "start": "2026-09-27T08:00",
+  "materials": [
+    {
+      "id": "WL-001",
+      "name": "原生木浆",
+      "stock": 12000
+    },
+    {
+      "id": "WL-002",
+      "name": "再生纸浆",
+      "stock": 5000
+    },
+    {
+      "id": "WL-003",
+      "name": "淀粉助剂",
+      "stock": 180
+    }
+  ],
+  "orders": [
+    {
+      "id": "DD-001",
+      "product": "文化用纸",
+      "qty": 10,
+      "due": "2026-09-28",
+      "priority": 3,
+      "workshop": 0,
+      "bom": {
+        "WL-001": 800,
+        "WL-003": 30
+      },
+      "status": "pending"
+    },
+    {
+      "id": "DD-002",
+      "product": "包装用纸",
+      "qty": 10,
+      "due": "2026-09-29",
+      "priority": 2,
+      "workshop": 1,
+      "bom": {
+        "WL-001": 600,
+        "WL-002": 200,
+        "WL-003": 10
+      },
+      "status": "pending"
+    },
+    {
+      "id": "DD-003",
+      "product": "包装用纸",
+      "qty": 10,
+      "due": "2026-09-28",
+      "priority": 1,
+      "workshop": 2,
+      "bom": {
+        "WL-001": 600,
+        "WL-002": 200,
+        "WL-003": 10
+      },
+      "status": "pending"
+    },
+    {
+      "id": "DD-004",
+      "product": "再生用纸",
+      "qty": 5,
+      "due": "2026-09-30",
+      "priority": 1,
+      "workshop": 0,
+      "bom": {
+        "WL-002": 800,
+        "WL-003": 10
+      },
+      "status": "pending"
+    }
+  ],
+  "queue": []
+}
